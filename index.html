@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Gemaakt door Clemens Retra -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNCampaigns Webwinkel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="home-button">JNCampaigns</a>
+            
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="home-nav">Producten</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="about-us-button">Over Ons</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="cart-button">Winkelwagen (<span id="cart-count">0</span>)</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Ontdek fantastische D&D campaigns gebaseerd op de geschiedenis van ons land</h1>
+    </div>
+
+    <div id="home" class="container mt-4">
+        <h1 class="text-center">Onze Producten</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">De Moerasdraak, de uitgewerkte campaign + Maps</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">De volledige set</h6>
+                        <p class="card-text">Prijs: €20</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Moerasdraak Campaign + Maps" data-price="20">Voeg toe aan winkelmand</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">De Moerasdraak, de uitgewerkte campaign</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Alleen de campaign</h6>
+                        <p class="card-text">Prijs: €15</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Moerasdraak Campaign" data-price="15">Voeg toe aan winkelmand</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">De Moerasdraak, de bijbehorende Maps</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Alleen de maps</h6>
+                        <p class="card-text">Prijs: €10</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Moerasdraak Maps" data-price="10">Voeg toe aan winkelmand</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart" class="shopping-cart">
+        <h1 class="text-center">Winkelwagen</h1>
+        <ul class="list-group" id="cart-items">
+
+        </ul>
+        <div class="text-center mt-3">
+            <p class="total-price">Totale Prijs: €<span id="total-price">0</span></p>
+            <div class="contact-info">
+                Mocht u een product willen kopen, mail dan naar <a href="mailto:JNCampaigns@outlook.com">JNCampaigns@outlook.com</a>
+            </div>
+            <div class="contact-info">
+                Dank u wel voor uw aankoop van een campaigns bij JNCampaigns. 
+            </div>
+        </div>
+    </div>
+
+    <div id="about-us" class="shopping-cart">
+        <h1 class="text-center">Over Ons</h1>
+        <div class="text-center mt-3">
+            <p class="about-us-text">
+                Wij zijn JNCampaigns. Een startend bedrijf dat wij hebben opgezet voor ons profielwerkstuk. Tijdens het uitwerken van dit bedrijf zullen al onze inkomsten gedoneerd worden aan <a href="https://degroenevesting.nl/" target="_blank">degroenevesting.nl</a>.
+                Wij hopen dat u de campaign die wij aanbieden zal waarderen.
+            </p>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    
+    <footer class="text-center py-3 mt-4 bg-light fixed-bottom">
+        <div class="container">
+            <p class="mb-0 text-muted">© 2024 JNCampaigns. Naim Kabal en Jasper Vis.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
